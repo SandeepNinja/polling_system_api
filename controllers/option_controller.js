@@ -2,7 +2,7 @@ const Questions = require("../models/questions");
 const Options = require("../models/options");
 
 module.exports.create = async function (req, res) {
-  const baseURL = "http://localhost:8000/options";
+  const baseURL = "https://polling-system-api-7d2f.onrender.com/options";
   try {
     const option = await Options.create({
       text: req.body.text,
